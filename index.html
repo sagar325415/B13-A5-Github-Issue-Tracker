@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home-Page</title>
-     <!-- tailwind and daisyUi -->
+    <!-- tailwind and daisyUi -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./style.css">
-    
+
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +21,62 @@
     </style>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
- <h2>hello re</h2>
+    <!-- login Github -->
+    <section class="max-w-[520px] bg-[#FFFFFF] min-h-[75vh] flex justify-center mx-auto mt-[50px]">
+
+
+        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-lg">
+
+            <!-- github-logo part -->
+
+            <div class="flex flex-col items-center justify-center mt-9">
+
+                <img class="w-[80px]" src="./assets/github-logo.png" alt="">
+
+                <h2 class="text-[#1F2937] font-semibold text-2xl mt-6">GitHub Issues Tracker</h2>
+                <p class="text-[#64748B]">Sign in to manage your issues</p>
+
+            </div>
+
+            <!-- github body part -->
+            <div class="card-body">
+                
+                <!-- feildset part -->
+                <fieldset class="fieldset">
+                    <label class="label font-medium text-[#1F2937]">Username</label>
+                    <input id="userName" type="text" class="input w-full" placeholder="Enter Username" />
+                    <div>
+                        <p class="text-[#4A00FF]">Default: admin</p>
+                    </div>
+                    <label class="label font-medium text-[#1F2937]">Password</label>
+                    <input id="password" type="password" class="input w-full" placeholder="Enter Password" />
+                    <div>
+                        <p class="text-[#4A00FF]">Default: admin123</p>
+                    </div>
+                    <button id="sign-btn" class="btn text-white  rounded-lg bg-[#4A00FF] mt-4">Sign In</button>
+                </fieldset>
+
+                <h1 class="text-center text-[#1F2937]">OR</h1>
+                <h2 class="text-center text-[#64748B]">Demo Credentials:</h2>
+
+                <!-- Default username and password -->
+
+                <div class="bg-[#F8FAFC] py-6">
+                    <p class="text-center"><span class="text-[#1F2937] font-semibold">Username:</span> <span
+                            class="text-[#1F2937]">admin</span></p>
+                    <p class="text-center"><span class="text-[#1F2937] font-semibold">Password:</span> <span
+                            class="text-[#1F2937]">admin123</span></p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+      <script src="./login.js"></script>
 </body>
+
 </html>
