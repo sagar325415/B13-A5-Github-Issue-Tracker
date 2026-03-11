@@ -1,128 +1,53 @@
-# 🌟 Welcome To (সহজ সরল সিম্পল) Assignment - 5
+- 1️⃣ What is the difference between var, let, and const?
+Answer:-
+var, let, and const are keywords used to declare variables in JavaScript.
 
-# **📅 Deadline For 60 marks:** 9th March, 2026 (11:59 pm ⏱️)  
-#  📅 No Deadline For 50 marks  
-# **📅 Deadline For 30 marks:** Any time after 9th March.
+var is the traditional way of declaring variables in JavaScript and it has function scope. A variable declared with var can be redeclared and reassigned within the same scope.
 
----
+let was introduced in ES6 (ECMAScript 2015) and it has block scope, meaning it is only accessible within the block in which it is defined. A variable declared with let cannot be redeclared, but its value can be reassigned.
 
-# Assignment-05: GitHub Issues Tracker
-
-
-### **API Endpoints:**
-###  **All Issues:** 
-  - https://phi-lab-server.vercel.app/api/v1/lab/issues 
+const is also introduced in ES6 and it is used to declare constant variables. It has block scope and a variable declared with const cannot be redeclared or reassigned after its initial declaration.
 
 
-###  **Single Issue:**
-   - https://phi-lab-server.vercel.app/api/v1/lab/issue/{id}
 
-   - Example: https://phi-lab-server.vercel.app/api/v1/lab/issue/33
+- 2️⃣ What is the spread operator (...)?
+Answer:-
+The spread operator (...) is a feature in JavaScript that allows an iterable object such as an array or object to be expanded into individual elements or properties.
 
-
-###  **Search Issue:** https://phi-lab-server.vercel.app/api/v1/lab/issues/search?q={searchText}
-
-   - Example:  https://phi-lab-server.vercel.app/api/v1/lab/issues/search?q=notifications
+It is commonly used to copy, merge, or extend arrays and objects in a simple and efficient way. The spread operator improves code readability and provides a concise syntax for handling collections of data.
 
 
----
 
-## 📝 Main Requirements
+- 3️⃣ What is the difference between map(), filter(), and forEach()?
+Answer:-
+map(), filter(), and forEach() are built-in JavaScript array methods used for iterating over array elements.
 
-## 🎨 Design Part
+The map() method applies a function to each element of an array and returns a new array containing the transformed elements.
 
-## Login Page
-- Create a login page containing a logo, title, and sub-title
-- Below that, there will be 2 inputs, a sign-in button, and a demo credential to sign in. Follow the Figma for this page 
-- Styled as per Figma
+The filter() method is used to select elements from an array based on a specific condition, and it returns a new array containing only the elements that satisfy the condition.
 
-## Main Page: 
-
-### Navbar: 
-
-- Navbar with website logo/name on the left
-- Search input and button on the right
-
-### Tab Section like Figma: 
-
-- 3 tab ( All, Open, Closed) at the top of this section.(**All**, **Open**, **Closed**)
-
-- Below the tab, there will be an icon, the issue count, some text on the left, and an open and closed marker on the right
-
-- Responsiveness: The website should be responsive for mobile devices. It is totally up to you. 
+The forEach() method executes a function for each element of an array but does not return a new array. It is mainly used for performing operations or side effects during iteration.
 
 
---- 
 
 
-## ⚙️ Functionalities
-- In login page, there will be default admin credentials (username, password). You need to sign in using these credentials.
+- 4️⃣ What is an arrow function?
+Answer:-
+An arrow function is a short and modern way of writing functions in JavaScript, introduced in ES6.
 
-- Load all issues and display as per Figma
+It provides a more concise syntax compared to traditional function expressions and helps make the code shorter and more readable. Arrow functions use the => symbol to define the function.
 
-- On clicking on an open or closed tab, it will load the issues data of the related tab and show it in a display-like card in a 4-column layout like Figma. By default, it will show all data 
-
-- Each card shows:
-  - Title
-  - Description
-  - Status 
-  - Author
-  - Priority
-  - Label
-  - CreatedAt
-- Clicking on an issue  card will open a modal and show all the information about that Issue. 
-
-### 🚀 Challenges
+Another important characteristic of arrow functions is that they do not have their own this context; instead, they inherit this from their surrounding lexical scope.
 
 
-- Show the card Top border based on their category(open, closed), open card will have Green Boder, closed card will have a purple border on top. 
-
-- Loading spinner on data load
-
-- Show active button on changing category names
-
-- Implement Search Functionality and 8 meaningful github commit.  
-
-- Create a readme file and answer this question on your own. Don’t copy-paste from Google or any AI chatbot. 
-    - 1️⃣ What is the difference between var, let, and const?
-    - 2️⃣ What is the spread operator (...)?
-    - 3️⃣ What is the difference between map(), filter(), and forEach()?
-    - 4️⃣ What is an arrow function?
-    - 5️⃣ What are template literals?
 
 
----
+- 5️⃣ What are template literals?
+Answer:-
+Template literals are a modern JavaScript feature used for creating strings in a more flexible and readable way.
 
-## 🛠️ Technology Stack
+They are written using backticks ( ) instead of single or double quotes. Template literals allow the inclusion of variables, expressions, and multi-line strings directly inside the string.
 
-- **HTML**
-- **CSS** (Vanilla/Tailwind/DaisyUI)
-- **JavaScript** (Vanilla)
-
----
-
-## 🔑 Demo Credentials
-
-```text
-Username: admin
-Password: admin123
-```
-
-
----
-
-### Optional: 
- - No need to show status: Open, Closed styles On modals. 
- - No Need to show icon on labels 
- - No need to apply styles on Priority 
---- 
-
-
-## 📤 What to submit
-
-- **GitHub Repository Link:**
-- **Live Site Link:**
-
----
+This feature simplifies string formatting and reduces the need for complex string concatenation, making the code easier to read and maintain.
 
 
